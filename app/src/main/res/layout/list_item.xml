@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/viewRow"
-    android:orientation="horizontal">
+    style="@style/viewRow">
 
     <ImageView
         android:id="@+id/image"
         style="@style/image"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"/>
 
     <LinearLayout
         android:id="@+id/text_container"
         style="@style/content"
         android:orientation="vertical"
+        android:layout_toRightOf="@id/image"
         android:paddingLeft="16dp">
+
 
         <TextView
             android:id="@+id/miwok_text_view"
@@ -29,4 +31,13 @@
             android:layout_height="wrap_content"
             tools:text="one" />
     </LinearLayout>
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_play_arrow_white_24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

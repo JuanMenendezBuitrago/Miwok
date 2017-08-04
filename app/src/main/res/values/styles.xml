@@ -35,10 +35,11 @@
         <item name="android:paddingLeft">@dimen/category_left_padding</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
     </style>
 
-    <style name="contentNumbers" parent="content">
-        <item name="android:background">@color/category_numbers</item>
+<!--    <style name="contentNumbers" parent="content">
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
     <style name="contentFamily" parent="content">
@@ -51,7 +52,7 @@
 
     <style name="contentPhrases" parent="content">
         <item name="android:background">@color/category_phrases</item>
-    </style>
+    </style>-->
 
     <style name="primaryText">
         <item name="android:textStyle">bold</item>
